@@ -16,6 +16,8 @@ public class Teste {
 		Tier tier = new Tier("Leo", 2, 5, "maennlich", "Europaeische Kurzhaar",
 				"Mittelgroﬂ", "Braun", "Rosa");
 		System.out.println(tier);
-	
+
+		Mensch karl = new Mensch("Karl", 12, 50, "maennlich", "Braun",
+				"dunkel", 1.50);
 	}
 }
