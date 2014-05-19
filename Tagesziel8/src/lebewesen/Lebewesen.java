@@ -18,7 +18,6 @@ public abstract class Lebewesen {
 	private String koerperfarbe;
 	// Eine Collection von allen Objekten
 	private static ArrayList<Lebewesen> lebewesenListe = new ArrayList<Lebewesen>();
-	
 
 	/**
 	 * 
@@ -43,6 +42,19 @@ public abstract class Lebewesen {
 	}
 
 	/**
+	 * @return
+	 * 
+	 */
+	public String auflisten() {
+		String lebewesen = null;
+		for (Lebewesen lebewesen1 : getLebewesenListe()) {
+			lebewesen = lebewesen1.toString();
+		}
+
+		return lebewesen;
+	}
+
+	/**
 	 * Die Methode gibt die Daten der Lebewesen am Monitor aus.
 	 */
 	public String toString() {
@@ -51,6 +63,15 @@ public abstract class Lebewesen {
 				.format("Name: %s\nAlter: %s Jahre\nGewicht: %s Kg\nGeschlecht: %s\nHaarfarbe: %s\nKoerperfaarbe: %s\n",
 						name, alter, gewicht, geschlecht, haarfarbe,
 						koerperfarbe);
+	}
+
+	/**
+	 * Fuegt ein Lebewesen in die Collection ein.
+	 * 
+	 * @param lebewesen
+	 */
+	public void erfasseLebewesen(Lebewesen lebewesen) {
+		lebewesenListe.add(lebewesen);
 	}
 
 	/**
