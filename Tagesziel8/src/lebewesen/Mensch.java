@@ -35,7 +35,7 @@ public class Mensch extends Lebewesen {
 	 */
 	public String toString() {
 
-		return super.toString() + String.format("Groesse: %s", groesse);
+		return super.toString() + String.format("Groesse: %s m", groesse);
 	}
 
 	/**

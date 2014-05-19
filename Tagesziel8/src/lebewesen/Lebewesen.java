@@ -8,6 +8,7 @@ import java.util.ArrayList;
  */
 public abstract class Lebewesen {
 
+	// Alter in Jahren
 	private int alter;
 	private String name;
 	// Gewicht in Kilogramm
@@ -17,6 +18,7 @@ public abstract class Lebewesen {
 	private String koerperfarbe;
 	// Eine Collection von allen Objekten
 	private static ArrayList<Lebewesen> lebewesenListe = new ArrayList<Lebewesen>();
+	
 
 	/**
 	 * 
@@ -46,7 +48,7 @@ public abstract class Lebewesen {
 	public String toString() {
 
 		return String
-				.format("Name: %s\nAlter: %s\nGewicht: %s\nGeschlecht: %s\nHaarfarbe: %s\nKoerperfaarbe: %s\n",
+				.format("Name: %s\nAlter: %s Jahre\nGewicht: %s Kg\nGeschlecht: %s\nHaarfarbe: %s\nKoerperfaarbe: %s\n",
 						name, alter, gewicht, geschlecht, haarfarbe,
 						koerperfarbe);
 	}
