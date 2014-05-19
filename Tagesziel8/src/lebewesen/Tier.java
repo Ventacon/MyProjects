@@ -1,4 +1,5 @@
 package lebewesen;
+
 /**
  * @author Bogachan
  * 
@@ -7,26 +8,35 @@ public class Tier extends Lebewesen {
 
 	private String rasse;
 	// Eine ungefaehre groesse des Tieres
-	private String tierGroesse;
+	private String tiergroesse;
 
 	/**
 	 * @param neuName
 	 * @param neuAlter
 	 * @param neuGewicht
-	 * @param neuTiergroesse
 	 * @param neuGeschlecht
-	 * @param neuRasse
 	 * @param neuHaarfarbe
 	 * @param neuKoerperfarbe
+	 * @param neuRasse
+	 * @param neuTiergroesse
 	 */
 	public Tier(String neuName, int neuAlter, int neuGewicht,
-			String neuTiergroesse, String neuGeschlecht, String neuRasse,
-			String neuHaarfarbe, String neuKoerperfarbe) {
+			String neuGeschlecht, String neuHaarfarbe, String neuKoerperfarbe,
+			String neuRasse, String neuTiergroesse) {
 
 		super(neuName, neuAlter, neuGewicht, neuGeschlecht, neuHaarfarbe,
 				neuKoerperfarbe);
 		this.rasse = neuRasse;
-		this.tierGroesse = neuTiergroesse;
+		this.tiergroesse = neuTiergroesse;
+	}
+
+	/**
+	 * Die Methode gibt die Daten des Tieres am Monitor aus.
+	 */
+	public String toString() {
+		return super.toString()
+				+ String.format("Rasse: %s\nTiergroesse: %s\n", rasse,
+						tiergroesse);
 	}
 
 	/**
@@ -48,7 +58,7 @@ public class Tier extends Lebewesen {
 	 * @return the tierGroesse
 	 */
 	public String getTierGroesse() {
-		return tierGroesse;
+		return tiergroesse;
 	}
 
 	/**
@@ -56,7 +66,7 @@ public class Tier extends Lebewesen {
 	 *            the tierGroesse to set
 	 */
 	public void setTierGroesse(String tierGroesse) {
-		this.tierGroesse = tierGroesse;
+		this.tiergroesse = tierGroesse;
 	}
 
 }

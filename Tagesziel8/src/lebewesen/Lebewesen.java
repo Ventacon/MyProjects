@@ -29,6 +29,7 @@ public abstract class Lebewesen {
 	 */
 	public Lebewesen(String neuName, int neuAlter, int neuGewicht,
 			String neuGeschlecht, String neuHaarfarbe, String neuKoerperfarbe) {
+
 		this.name = neuName;
 		this.alter = neuAlter;
 		this.gewicht = neuGewicht;
@@ -39,8 +40,15 @@ public abstract class Lebewesen {
 
 	}
 
-	public void ausgeben() {
-		System.out.println();
+	/**
+	 * Die Methode gibt die Daten der Lebewesen am Monitor aus.
+	 */
+	public String toString() {
+
+		return String
+				.format("Name: %s\nAlter: %s\nGewicht: %s\nGeschlecht: %s\nHaarfarbe: %s\nKoerperfaarbe: %s\n",
+						name, alter, gewicht, geschlecht, haarfarbe,
+						koerperfarbe);
 	}
 
 	/**

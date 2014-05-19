@@ -13,11 +13,12 @@ public class Teste {
 		Mensch mensch = new Mensch("Bogachan Oenal", 22, 80, "maennlich",
 				"Dunkelbraun", "Hell", 1.85);
 
-		Tier tier = new Tier("Leo", 2, 5, "maennlich", "Europaeische Kurzhaar",
-				"Mittelgroﬂ", "Braun", "Rosa");
-		System.out.println(tier);
-
 		Mensch karl = new Mensch("Karl", 12, 50, "maennlich", "Braun",
 				"dunkel", 1.50);
+		System.out.println(karl.toString());
+
+		Katze eKurzhaar = new Katze("Leo", 2, 5, "maennlich", "Braun", "Rosa",
+				"Europa‰ische Kurzhaar", "Mittelgroﬂ");
+		System.out.println(eKurzhaar.toString());
 	}
 }

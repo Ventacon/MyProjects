@@ -1,4 +1,5 @@
 package lebewesen;
+
 /**
  * 
  * @author Bogachan
@@ -27,6 +28,14 @@ public class Mensch extends Lebewesen {
 		super(neuName, neuAlter, neuGewicht, neuGeschlecht, neuHaarfarbe,
 				neuKoerperfarbe);
 		this.groesse = neuGroesse;
+	}
+
+	/**
+	 * Die Methode gibt die Daten des Menschen am Monitor aus.
+	 */
+	public String toString() {
+
+		return super.toString() + String.format("Groesse: %s", groesse);
 	}
 
 	/**
