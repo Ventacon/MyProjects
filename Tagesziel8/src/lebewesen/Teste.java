@@ -15,7 +15,7 @@ public class Teste {
 
 		Mensch karl = new Mensch("Karl", 12, 50, "maennlich", "Braun",
 				"dunkel", 1.50);
-		// System.out.println(karl.toString());
+		 System.out.println(karl.toString());
 
 		Katze eKurzhaar = new Katze("Leo", 2, 5, "maennlich", "Braun", "Rosa",
 				"Europa‰ische Kurzhaar", "Mittelgroﬂ");
